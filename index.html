@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<!-- This is an HTML comment -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+	<title>Easy Pumpkin Pie Dip</title>
+
+	<!--turns off iOS reset of viewport-->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<style>
+	/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	
+	margin: 0;	
+	padding: 0;	
+	border: 0;	
+	font-size: 100%;	
+	font: inherit;	
+	vertical-align: baseline;}
+	
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
+	display: block;}
+	
+	body {	
+	line-height: 1.5;
+	}
+	
+	ol, ul {	
+	list-style: none;
+	}
+	
+	blockquote, q {	
+	quotes: none;
+	}
+	
+	blockquote:before, blockquote:after,q:before, q:after {	
+	content: '';	
+	content: none;
+	}
+	
+	table {	
+	border-collapse: collapse;	border-spacing: 0;
+	}	 
+	
+	/* end reset*/
+    
+
+    /* add your css*/
+
+    /*color palette:
+    burnt peach: #804020;
+    peach:#C08060;
+    light green:#D6D5B8;
+    slate blue: #516970;
+    dark blue:#213A42;*/
+
+    body{
+    	font-size: 20px;
+    	background: #D6D5B8 url(images/pumpkin.jpg)repeat 110px 20px;
+    }
+
+    #wrapper {
+    	width: auto;
+    	max-width: 1000px;
+    	margin: 2% auto;
+    	border: 1px solid #804020;
+    	background: #516970;
+    }
+
+    header{
+    	color:/*#ffeee6*/ #D6D5B8;
+    	background: #804020;
+    	border: 1px solid #C08060;
+    	margin: 2%;
+    	padding: 15px;
+    	font-family: 'Work Sans', sans-serif;
+    }
+
+     h1{
+     	text-align: center; 
+     	/*background-color: #C08060;
+    	border: 1px solid #C08060;*/
+    	margin: 2%;
+    	font-family: 'Lancelot', cursive;
+    	font-size: 3em;	
+    }
+
+
+     h1 p{
+    	border: 1px solid #C08060;
+    	margin: 5% auto;
+    	padding: 200px;
+    	font-family: 'Roboto', sans-serif;
+    }
+
+    img {
+
+    	margin: 45px;
+		border: 5px dashed #D6D5B8;
+	}
+
+    #data {
+    	border:3px dashed #213A42;
+    	margin-bottom: 2%;
+    	font-size: .8em;
+    	background: #516970;
+	}
+
+	#data li{
+		border: 1px solid #516970;
+		display: block;
+		margin: 1%;
+		text-align: center;
+		background: #516970;
+		font-family: 'Roboto', sans-serif;
+		color:#D6D5B8;
+	}
+
+
+    #ingredients {
+    	border:3px dashed #213A42;
+    	font-size: .8em;
+    	margin-bottom: 2%;
+    	color:#C08060;
+}
+
+	#ingredients li{
+		border: 1px solid #516970;
+		display: block;
+		margin: 1%;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		color: #D6D5B8;
+	}
+
+	 #steps {
+    	border:3px dashed #213A42;
+    	font-size: .8em;
+    	margin-bottom: 2%;
+    }
+
+
+	#steps li {
+		border: 1px solid #516970;
+		display: block;
+		margin: 1%;
+		text-align: left;
+		padding: 2%;
+		min-height:15px;
+		font-family: 'Roboto', sans-serif;
+		color:#D6D5B8;
+	}
+
+	#steps ul{
+		margin: 1%;
+		display: grid;
+		grid-template-areas: 
+		"step-one step-two"
+		"step-three step-three"
+	}
+
+	li span{
+		color: #C08060;
+		font-weight: bold;
+		font-size: 1.5em;
+		font-family:'Work Sans', sans-serif;
+	}
+
+	footer{
+		color:#D6D5B8;
+		font-family: 'Work Sans', sans-serif;
+		background:#C08060;
+		border:1px solid #804020;
+		padding: 10px;
+	}
+
+	/*tablet styles*/
+
+	@media only screen and (min-width: 500px) and (max-width: 1000px){
+
+		#grid-container{
+		 	display:grid;
+	    	width: auto;
+	    	margin: 5% auto;
+	    	border: 1px solid #804020;
+	    	background: #C08060;
+	    	grid-template-columns: 1fr 1fr;
+	    	grid-gap: 2px;
+   		 }
+
+   		  #sec2{
+   		 	margin: 50px auto;
+   		 	padding:50px;
+
+   		 }
+
+		#data ul{
+			margin: 1%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-gap: 5px;
+		}
+
+		#steps ul{
+			margin: 1%;
+			display: grid;
+			grid-template-areas: 
+			"step-one step-two"
+			"step-three step-three"
+		}
+
+		#step1{
+			grid-area: step-one;
+		}
+
+		#step2{
+			grid-area: step-two;
+		}
+
+		#step3{
+			grid-area: step-three;
+		}
+		
+	}
+
+	/*desktop styles*/
+	@media only screen and (min-width: 901px) {
+
+		#grid-container{
+		 	display:grid;
+	    	width: auto;
+	    	margin: 5% auto;
+	    	border: 1px solid #C08060;
+	    	background: #C08060;
+	    	grid-template-columns: 1fr 1fr;
+   		}
+
+   		 #sec2{
+   		 	margin: 50px auto;
+   		 	padding: 50px;
+   		}
+
+		#data ul{
+			margin: 1%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 5px;
+		}
+
+		#steps ul{
+			margin: 1%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrapper"> 
+
+		<header>
+			<h1>Easy Pumpkin Pie Dip</h1>
+				<div id="grid-container">
+					<img src="images/piedip.jpg" alt="Fluffy Pumpkin Pie Dip">
+
+					<section id="sec2">
+						<p>This Pumpkin Pie Dip is a crowd pleaser during the fall months, and a big hit with anyone who is obessed with everything pumpkin. The best part: it's only three ingredients and less than 10 minutes before it is ready to eat. Serve with apples, animal crackers, cookies, pretzels or your creative snacking preference.</p>
+					</section>
+				</div>
+		</header>
+
+		<div id="data"> 
+			<ul>
+				<li><span>Time:</span> <br> >10 min</li>
+				<li><span>Tools:</span> <br> Bowl <br> Rubber Spatula</li>
+				<li><span>Diet:</span> <br> Gluten Free</li>
+				<li><span>Serving:</span> <br>Til your heart's content</li>
+			</ul>	  
+		</div>
+
+		<div id="ingredients"> 
+					<ul>
+						<li><span>Ingredients</span></li>
+						<li><em> 1 package/8 oz</em> Cool Whip (thawed)</li>
+						<li><em>1 can/15 oz</em> Pumpkin</li>
+						<li><em>1-2 tsp (to your preference)</em> Pumpkin Pie Spice</li>
+						<li><em>1 small package</em> Jello brand vanilla instant pudding</li>
+					</ul>	  
+		</div>
+		
+		<div id="steps"> 
+					<ul>
+						<li id="step1"> <span>Step 1</span><br> Empty can of pumpkin, instant pudding mix (dry-do not make the pudding), cool whip and spice in a large mixing bowl.</li>
+						<li id="step2"> <span>Step 2</span><br> Gently fold all ingredients until combined (about 5 minutes) careful not to overfold.</li>
+						<li id="step3"> <span>Step 3</span><br> If you're not ready to enjoy right away, chill in refridgerator in cool whip or other airtight container.</li>
+					</ul>	  
+		</div>	
+
+
+	</div>
+
+	<footer>
+		Callie Anders, Family Recipe
+	</footer>
+	
+</body>
+
+</html>
